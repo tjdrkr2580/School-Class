@@ -1,5 +1,5 @@
-# 학교 수업
-**고등학교 정보통신기기 소프트웨어 개발 과목 수업** 😁
+# School - Class
+**고등학교 개발 과목 수업 Repository** 😁
 <hr>
 
 ### study
@@ -7,5 +7,6 @@
 -   [ ] HTML
 -   [ ] CSS
 -   [ ] JAVASCRIPT
+-   [ ] PYTHON
 -   [ ] ETC
 
