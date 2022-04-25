@@ -8,7 +8,45 @@
 </head>
 <body>
     <h1>레드향 주문하기</h1>
-    <img style="width: 100%; height: 350px;" src="../image/레드향.jpg" alt="레드향" title="레드향">
-    
+    <img style="width: 100%; height: 350px;" src="../image/레드향.jpg" alt="레드향">
+    <form style="background-color: #fff7dc">
+        <fieldset>
+            <legend>상품 선택</legend>
+            <p><strong>주문할 상품을 선택해주세요</strong></p>
+            <ul>
+                <li>
+                    <input type="checkbox" id="num_id"><label for="num_id">선물용 3kg 
+                    </label><input type="number" min="0" max="5">개 <small>(최대 5개)</small>
+                </li>
+                <li>
+                    <input type="checkbox" id="num_id" checked ><label for="num_id">선물용 5kg 
+                    </label><input type="number" min="0" max="3" value="1">개 <small>(최대 3개)</small>
+                </li>
+                <li>
+                    <input type="checkbox" id="num_id"><label for="num_id">가정용 3kg 
+                    </label><input type="number" min="0" max="5">개 <small>(최대 5개)</small>
+                </li>
+                <li>
+                    <input type="checkbox" id="num_id"><label for="num_id">가정용 3kg 
+                    </label><input type="number" min="0" max="3">개 <small>(최대 3개)</small>
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>배송 정보</legend>
+            <ul>
+                <li>이름 <input type="text"></li>
+                <li>배송 주소 <input type="text"></li>
+                <li>이메일 <input type="email"></li>
+                <li>연락처 <input type="tel"></li>
+                <li>배송 지정 <input type="date"><small>(주문일로부터 최소 3일 이후)</small></li>
+                <li>메모 <textarea rows="5" cols="60"></textarea></li>
+            </ul>
+        </fieldset>
+        <input type="submit" value="주문하기">
+        <input type="reset" value="취소하기">
+        <a href="practice10.html" target="_blank"><input type="button" value="홈화면" ></a>
+    </form>
+
 </body>
 </html>
