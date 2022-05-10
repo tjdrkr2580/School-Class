@@ -1,0 +1,43 @@
+body {
+    display: block;
+    width: 950px;
+    margin: 0;
+    padding: 0%;
+}
+
+.head_area {
+    display: block;
+    width: 100%;
+    background-color: yellow;
+}
+
+.foot_area {
+    clear: both;
+    width: 100%;
+    background-color: yellow;
+}
+
+.wrapper {
+    width: 950px;
+}
+
+.left_area {
+    float: left;
+    width: 200px;
+    background-color: aqua;
+    min-height: 100px;
+}
+
+.content_area {
+    float: left;
+    width: 500px;
+    background-color: #fff;
+    min-height: 100px;
+}
+
+.right_area {
+    float: left;
+    width: 250px;
+    background-color: skyblue;
+    min-height: 100px;
+}
