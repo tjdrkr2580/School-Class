@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li {
+            display: inline-block;
+            width: 300px;
+            height: 300px;
+            border: 1px solid black;
+            margin: 10px;
+        }
+
+        .div1 {
+            background-color: darkgreen;
+            background: radial-gradient(circle closest-side at 30% 40% , white , yellow , green  );
+            
+        }
+
+
+        .div2 {
+            background-color: darkgreen;
+            background: radial-gradient(circle closest-corner at 30% 40% , white , yellow ,green);
+        }
+
+
+        .div3 {
+            background-color: darkgreen;
+            background: radial-gradient(circle farthest-side at 30% 40% , white , yellow ,green);
+        }
+
+
+        .div4 {
+            background-color: darkgreen;
+            background: radial-gradient(circle farthest-corner at 30% 40% , white , yellow ,green);
+        }
+    
+    </style>
+</head>
+<body>
+    <ul>
+        <li class="div1"></li>
+        <li class="div2"></li>
+        <li class="div3"></li>
+        <li class="div4"></li>
+    </ul>
+</body>
+</html>

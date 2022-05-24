@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 800px;
+            margin: 20px auto;
+        }
+
+        img {
+            width: 200px;
+            margin-right: 20px; 
+        }
+
+        .origin {
+            width: 100px;
+            height: 100px;
+            float: left;
+            margin: 40px;
+        }
+
+        #rotate1:hover {
+            transform: rotate(40deg);
+        }
+
+        #rotate2:hover {
+            transform: rotate(-40deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="origin" id="rotate1">
+            <img src="../image/dog-414570__480.jpg">
+        </div>
+        <div class="origin" id="rotate2">
+            <img src="../image/dog-414570__480.jpg">
+        </div>
+    </div>
+</body>
+</html>
