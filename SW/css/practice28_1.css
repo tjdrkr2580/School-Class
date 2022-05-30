@@ -43,10 +43,9 @@ h1 {
     background-color: black;
 }
 
-.prod-list li:hover img {}
-
 .prod-list li:hover .caption {
     transition: all 0.6s;
+    background-color: rgba(0,0,0,0.5);
     opacity: 1;
     transform: translateY(-300px);
 }
