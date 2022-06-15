@@ -1,19 +1,12 @@
-our_pots = {'김규진':1 , '김도원':2 , '김찬웅':3 , '김채은':4, '김태현':5} 
-for i in our_pots:
-    print(i)
-    
-    
-for i in our_pots:
-    print('{}의 집에는 {}개의 냄비가 있다'.format(i,our_pots[i]))
-        
-for i in our_pots :
-    if our_pots[i] >= 3 :
-        print('{}의 집에는 {}개의 냄비가 있다'.format(i,our_pots[i]))
-        break
-    
+import random
+def rolling_dice():
+    n = random.randint(1,6)
+    print("6면 주사위 굴린 결과 : ",n)
+rolling_dice()
+rolling_dice()
 
-for x in range(2, 10):
-    print("------- [" + str(x) +"] -------")
-    for y in range(1, 10):
-        print(x, "X", y, "=", x*y)
-print("---------------------")
+def star():
+    print("*****")
+star()
+star()
+star()
