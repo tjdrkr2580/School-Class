@@ -1,0 +1,5 @@
+def star(element,element_num):
+        for i in range (1,element_num):
+            print(element * i)            
+star("&",3)
+        
