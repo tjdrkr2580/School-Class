@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <script>
+        function check(message) {
+            var i = 0;
+            var sum = 0;
+            while(1) {
+                i++;
+                sum += i;
+                if(sum > 20){
+                    message();
+                    break;
+                }
+            }
+        }
+        var message=  function () {
+            alert("합이 20을 넘었습니다.");
+        }
+        check(message);
+    </script>
+    <body>
+    
+    </body>
+</html>

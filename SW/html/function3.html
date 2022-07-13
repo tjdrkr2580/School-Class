@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <script>
+        function add() {
+            var output = " ";
+            alert(typeof(arguments));
+            alert(arguments.length);
+            for(var i = 0 ; i < arguments.length ; i++){
+                output += arguments[i]+" ";
+            }
+            return output;
+        }
+        var out = add(1,2,3,4,5);
+        alert(out);
+    </script>
+    <body>
+    
+    </body>
+</html>

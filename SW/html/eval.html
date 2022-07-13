@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <script>
+        function calculate(form) {
+            form.result.value = eval(form.expr.value); }
+    </script>
+    <body>
+        <form name="cal">
+            계산식 입력 : <input type="text" name="expr" size=20><br>
+            계산 결과 : <input type="text" name="result" size=20><p />
+            <input type="button" value="계산하기" onclick="calculate(this.form)">
+        </form>
+    </body>
+</html>

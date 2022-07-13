@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <script>
+        function outerFuction() {
+            var a = 10;
+            var b = 20;
+            function innerFunction() {
+                var b = 30;
+                alert(a);
+                alert(b);
+            }
+            innerFunction();
+            alert("outerFuction");
+        }
+        outerFuction();
+    </script>
+    <body>
+    
+    </body>
+</html>

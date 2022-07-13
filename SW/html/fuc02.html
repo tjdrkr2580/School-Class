@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        클릭한 버튼:
+        <script>
+        function subject(cho){
+            var ans;
+            ans = confirm(cho);
+            if(ans == true)
+            return "확인";
+            return "취소";
+        }
+        var cho, choice;
+        choice = subject("확인 또는 취소 선택");
+        document.write(choice);
+    </script>
+    </body>
+</html>
