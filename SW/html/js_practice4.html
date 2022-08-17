@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function calculate(form) {
+        form.expression.value = eval(form.expression.value);
+      }
+      function input_btn(form, str) {
+        form.expression.value += str;
+      }
+      function clear_exp(form) {
+        form.expression.value = " ";
+      }
+    </script>
+  </head>
+  <body>
+    <center>
+    <form name="cal">
+      <table border="1">
+        <tr border="1"></tr>
+        <tr>
+          <td colspan="4">
+            <input type="text" name="expression" size="20" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input
+              type="button"
+              value="7"
+              onClick="input_btn(this.form, '7')"
+            />
+          </td>
+          <td>
+            <input
+              type="button"
+              value="8"
+              onClick="input_btn(this.form, '8')"
+            />
+          </td>
+          <td>
+            <input
+              type="button"
+              value="9"
+              onClick="input_btn(this.form, '9')"
+            />
+          </td>
+          <td>
+            <input
+              type="button"
+              value="/"
+              onClick="input_btn(this.form, '/')"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input
+              type="button"
+              value="4"
+              onClick="input_btn(this.form, '4')"
+            />
+          </td>
+          <td>
+            <input
+              type="button"
+              value="5"
+              onClick="input_btn(this.form, '5')"
+            />
+          </td>
+          <td>
+            <input
+              type="button"
+              value="6"
+              onClick="input_btn(this.form, '6')"
+            />
+          </td>
+          <td>
+            <input
+              type="button"
+              value="*"
+              onClick="input_btn(this.form, '*')"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input
+              type="button"
+              value="1"
+              onClick="input_btn(this.form, '1')"
+            />
+          </td>
+          <td>
+            <input
+              type="button"
+              value="2"
+              onClick="input_btn(this.form, '2')"
+            />
+          </td>
+          <td>
+            <input
+              type="button"
+              value="3"
+              onClick="input_btn(this.form, '3')"
+            />
+          </td>
+          <td>
+            <input type="button" value="-"" onClick="input_btn(this.form, '*')"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input
+              type="button"
+              value="0"
+              onClick="input_btn(this.form, '0')"
+            />
+          </td>
+          <td>
+            <input
+              type="button"
+              value="."
+              onClick="input_btn(this.form, '.')"
+            />
+          </td>
+          <td>
+            <input
+              type="button"
+              value="+"
+              onClick="input_btn(this.form, '+')"
+            />
+          </td>
+          <td>
+            <input
+              type="button"
+              value="%"
+              onClick="input_btn(this.form, '%')"
+            />
+          </td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="button" value="=" onclick="calculate(this.form)"></td>
+            <td colspan="2"><input type="button" value="Clear" onclick="clear(clear_exp(this.form))"></td>
+        </tr>
+      </table>
+    </center>
+</form>
+  </body>
+</html>
